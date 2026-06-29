@@ -1,0 +1,16 @@
+{
+  "name": "driver-trip-log-system",
+  "version": "1.0.0",
+  "description": "Transport Management SaaS Dashboard - Root Workspace",
+  "scripts": {
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

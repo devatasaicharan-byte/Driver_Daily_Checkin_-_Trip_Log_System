@@ -1,0 +1,12 @@
+node_modules/
+.env
+local_db.json
+dist/
+build/
+.DS_Store
+*.log
+.gemini/
+.agents/
+task.md
+walkthrough.md
+implementation_plan.md
