@@ -1,0 +1,258 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Manivtha Admin",
+      "email": "admin@manivtha.com",
+      "password": "$2a$10$0WL4Wvp9CSVtKP55oEbJx.d81KFsgNCNcwnDNtayvzX3oUEWDjvFS",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Rajesh Kumar",
+      "email": "rajesh@manivtha.com",
+      "password": "$2a$10$yt.CiQh9EZKXPkjjQDDKRe9GR3QPUuE61JHHLJvE9xUoT7fatvwHm",
+      "role": "driver"
+    },
+    {
+      "id": 3,
+      "name": "Sunil Rao",
+      "email": "sunil@manivtha.com",
+      "password": "$2a$10$yt.CiQh9EZKXPkjjQDDKRe9GR3QPUuE61JHHLJvE9xUoT7fatvwHm",
+      "role": "driver"
+    },
+    {
+      "id": 4,
+      "name": "Ramesh Naik",
+      "email": "ramesh@manivtha.com",
+      "password": "$2a$10$yt.CiQh9EZKXPkjjQDDKRe9GR3QPUuE61JHHLJvE9xUoT7fatvwHm",
+      "role": "driver"
+    },
+    {
+      "id": 5,
+      "name": "Michael DSouza",
+      "email": "michael@manivtha.com",
+      "password": "$2a$10$Xl3VeYiGaSztcKPx/HwV/.akHntpCf26aEmlLM.zqmwFRiRiv3sTK",
+      "role": "driver"
+    }
+  ],
+  "drivers": [
+    {
+      "id": 1,
+      "driverName": "Rajesh Kumar",
+      "driverId": "DRV001",
+      "phone": "9845012345",
+      "licenseNumber": "KA5120190001234",
+      "licenseExpiry": "2032-12-31",
+      "joiningDate": "2020-01-15",
+      "experience": 8,
+      "status": "Available",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "driverName": "Sunil Rao",
+      "driverId": "DRV002",
+      "phone": "9845023456",
+      "licenseNumber": "KA5120200005678",
+      "licenseExpiry": "2030-05-20",
+      "joiningDate": "2021-06-10",
+      "experience": 5,
+      "status": "Available",
+      "userId": 3
+    },
+    {
+      "id": 3,
+      "driverName": "Ramesh Naik",
+      "driverId": "DRV003",
+      "phone": "9845034567",
+      "licenseNumber": "KA5120180009999",
+      "licenseExpiry": "2028-11-15",
+      "joiningDate": "2019-03-22",
+      "experience": 10,
+      "status": "On Trip",
+      "userId": 4
+    },
+    {
+      "id": 4,
+      "driverName": "Michael DSouza",
+      "driverId": "DRV004",
+      "phone": "9845045678",
+      "licenseNumber": "KA5120210002468",
+      "licenseExpiry": "2035-08-08",
+      "joiningDate": "2022-09-01",
+      "experience": 4,
+      "status": "Maintenance",
+      "userId": 5
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "vehicleNumber": "KA-01-MJ-1234",
+      "vehicleType": "SUV",
+      "model": "Toyota Innova Crysta",
+      "insuranceExpiry": "2027-04-15",
+      "fitnessCertificate": "2028-04-15",
+      "rcNumber": "RC-KA01MJ1234",
+      "assignedDriverId": 1,
+      "status": "Available"
+    },
+    {
+      "id": 2,
+      "vehicleNumber": "KA-03-NB-5678",
+      "vehicleType": "Sedan",
+      "model": "Maruti Suzuki Dzire",
+      "insuranceExpiry": "2026-09-30",
+      "fitnessCertificate": "2028-09-30",
+      "rcNumber": "RC-KA03NB5678",
+      "assignedDriverId": 2,
+      "status": "Available"
+    },
+    {
+      "id": 3,
+      "vehicleNumber": "KA-51-MD-9012",
+      "vehicleType": "Traveller",
+      "model": "Force Traveller 12S",
+      "insuranceExpiry": "2026-12-15",
+      "fitnessCertificate": "2027-12-15",
+      "rcNumber": "RC-KA51MD9012",
+      "assignedDriverId": 3,
+      "status": "On Trip"
+    },
+    {
+      "id": 4,
+      "vehicleNumber": "KA-04-P-7777",
+      "vehicleType": "SUV",
+      "model": "Toyota Fortuner",
+      "insuranceExpiry": "2027-01-20",
+      "fitnessCertificate": "2029-01-20",
+      "rcNumber": "RC-KA04P7777",
+      "assignedDriverId": 4,
+      "status": "Maintenance"
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "driverId": 1,
+      "driverName": "Rajesh Kumar",
+      "vehicleId": 1,
+      "vehicleNumber": "KA-01-MJ-1234",
+      "pickupLocation": "Bengaluru Airport",
+      "destination": "Electronic City",
+      "customerName": "Wipro Corporate",
+      "tripDate": "2026-06-28",
+      "startTime": "09:00:00",
+      "endTime": "11:30:00",
+      "startingKm": 124500,
+      "endingKm": 124565,
+      "totalDistance": 65,
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "driverId": 1,
+      "driverName": "Rajesh Kumar",
+      "vehicleId": 1,
+      "vehicleNumber": "KA-01-MJ-1234",
+      "pickupLocation": "Indiranagar",
+      "destination": "Whitefield",
+      "customerName": "Aditi Sharma",
+      "tripDate": "2026-06-28",
+      "startTime": "14:00:00",
+      "endTime": "16:00:00",
+      "startingKm": 124565,
+      "endingKm": 124590,
+      "totalDistance": 25,
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "driverId": 2,
+      "driverName": "Sunil Rao",
+      "vehicleId": 2,
+      "vehicleNumber": "KA-03-NB-5678",
+      "pickupLocation": "Marathahalli",
+      "destination": "Mysore Palace (Outstation)",
+      "customerName": "Karan Mehra Family",
+      "tripDate": "2026-06-29",
+      "startTime": "08:00:00",
+      "endTime": "15:26",
+      "startingKm": 89420,
+      "endingKm": 100000,
+      "totalDistance": 10580,
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "driverId": 3,
+      "driverName": "Ramesh Naik",
+      "vehicleId": 3,
+      "vehicleNumber": "KA-51-MD-9012",
+      "pickupLocation": "Kempegowda Int Airport",
+      "destination": "Nandi Hills Tour",
+      "customerName": "German Tourists",
+      "tripDate": "2026-06-29",
+      "startTime": "10:30:00",
+      "endTime": null,
+      "startingKm": 215300,
+      "endingKm": null,
+      "totalDistance": 0,
+      "status": "Started"
+    }
+  ],
+  "checkins": [
+    {
+      "id": 1,
+      "driverId": 1,
+      "driverName": "Rajesh Kumar",
+      "vehicleId": 1,
+      "vehicleNumber": "KA-01-MJ-1234",
+      "checkinDate": "2026-06-28",
+      "checkinTime": "08:15:00",
+      "vehicleCondition": "Excellent",
+      "fuelFilled": 25.5,
+      "odometerReading": 124500,
+      "engineStatus": "Normal",
+      "tyreCondition": "Good",
+      "batteryStatus": "Charged",
+      "remarks": "Odometer verified. Vehicle cleaned.",
+      "vehicleImageUrl": ""
+    },
+    {
+      "id": 2,
+      "driverId": 2,
+      "driverName": "Sunil Rao",
+      "vehicleId": 2,
+      "vehicleNumber": "KA-03-NB-5678",
+      "checkinDate": "2026-06-29",
+      "checkinTime": "07:30:00",
+      "vehicleCondition": "Good",
+      "fuelFilled": 15,
+      "odometerReading": 89420,
+      "engineStatus": "Normal",
+      "tyreCondition": "Good",
+      "batteryStatus": "Charged",
+      "remarks": "Airport transfer duty check-in.",
+      "vehicleImageUrl": ""
+    },
+    {
+      "id": 3,
+      "driverId": 3,
+      "driverName": "Ramesh Naik",
+      "vehicleId": 3,
+      "vehicleNumber": "KA-51-MD-9012",
+      "checkinDate": "2026-06-29",
+      "checkinTime": "09:00:00",
+      "vehicleCondition": "Excellent",
+      "fuelFilled": 40,
+      "odometerReading": 215300,
+      "engineStatus": "Normal",
+      "tyreCondition": "Good",
+      "batteryStatus": "Charged",
+      "remarks": "Outstation corporate trip check-in.",
+      "vehicleImageUrl": ""
+    }
+  ]
+}
